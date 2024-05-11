@@ -28,7 +28,7 @@ const photosMiddleware = multer({dest : 'uploads'});
 // allowing  cross-origin resource sharing (CORS) for domain OR middleware
 app.use(cors({
     credentials : true,
-    origin : 'http://localhost:5173'
+    origin : 'https://booKit-front.vercel.app'
 }));
 
 
@@ -52,6 +52,10 @@ app.listen(process.env.PORT || 5000 , ()=>{
 
 app.get('/test' , (req , res) =>{
     res.json('test ok');
+});
+
+app.use('/' , (req ,res) => {
+    res.send("Server is running")
 });
 
 function getUserDataFromToken(req){

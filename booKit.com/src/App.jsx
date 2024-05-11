@@ -14,7 +14,7 @@ import PlacePage from "./pages/Placepage";
 import BookingsPage from "./pages/BookingsPage";
 import BookingPage from "./pages/BookingPage";
 
-axios.defaults.baseURL = 'http://localhost:4000';
+axios.defaults.baseURL = 'https://booKit-back.vercel.app';
 axios.defaults.withCredentials = true;
 
 
