@@ -14,7 +14,7 @@ import PlacePage from "./pages/Placepage";
 import BookingsPage from "./pages/BookingsPage";
 import BookingPage from "./pages/BookingPage";
 
-axios.defaults.baseURL = 'https://booKit-back.vercel.app';
+axios.defaults.baseURL = 'https://boooKit-back.vercel.app';
 axios.defaults.withCredentials = true;
 
 
